@@ -11,3 +11,394 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.container {
+  position: relative;
+  width: 50%;
+}
+.image {
+  display: block;
+  width: 20%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  /* top: 0; */
+  /* bottom: 0; */
+  /* left: 0; */
+  /* right: 0; */
+  height: 100%;
+  width: 85%;
+  opacity: 0;
+  transition: 0.5s ease;
+  /* background-color: #008cba; */
+}
+
+.text {
+  color: black;
+  font-size: 20px;
+  position: inherit;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+/* STart */
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: white;
+  position: relative;
+  transition: color 0.3s ease;
+ 
+}
+
+#menuToggle a:hover
+{
+  color: tomato;
+  font-weight: bold;
+  font-size: 50px;
+   display: block; 
+  background-image: url("https://cdn3.vectorstock.com/i/1000x1000/36/77/small-hearts-on-black-background-vector-18823677.jpg");
+  background-size: cover;
+  background-position: 20% 20%;
+  /* background-clip: text; */
+  /* text-fill-color: transparent; */
+  width: 20%;
+  height: 10%;
+  /* transform: scale(1.5); */
+   margin: auto;
+   opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+ }
+/* 
+ #menuToggle a #hello{
+   display: block;
+   position: absolute;
+   margin-top: 30px;
+   margin-left: 30px;   
+ } */
+
+ 
+ #insideText1{
+  display: none;
+  position: relative;
+  margin-left: 400px;
+  /* right: -70px; */
+  text-align: center;
+    list-style: none;
+  top:-70px;
+ }
+
+ #insideText2{
+  display: none;
+  position: relative;
+  margin-left: 400px;
+  /* right: -70px; */
+  text-align: center;
+    list-style: none;
+ }
+
+ #insideText3{
+  display: none;
+  position: relative;
+  margin-left: 400px;
+  /* right: -70px; */
+  text-align: center;
+    list-style: none;
+ }
+
+ #insideText4{
+  display: none;
+  position: relative;
+  margin-left: 400px;
+  /* right: -70px; */
+  text-align: center;
+    list-style: none;
+ }
+
+ #insideText5{
+  display: none;
+  position: relative;
+  margin-left: 400px;
+  /* right: -70px; */
+  text-align: center;
+    list-style: none;
+ }
+
+ p{
+   display: none;
+   position: relative;
+   
+  margin-left: 400px;
+ }
+
+img{
+  display: none;
+  width: 30%;
+}
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+#menu1:hover #insideText1{
+  display: block;
+  color:white;
+  width: 100%;
+  position: absolute;
+  border-left: 1px solid lightgray;
+  height: 700px;
+  margin-left: 400px;
+  top:-50px;
+  /* right: -70px; */
+  text-align: left;
+    list-style: none;
+  font-size: 0.3em;
+}
+
+#menu2:hover #insideText2{
+  display: block;
+  color:white;
+  width: 100%;
+  position: absolute;
+  border-left: 1px solid lightgray;
+  margin-left: 400px;
+  height: 700px;
+  top:-120px;
+  /* right: -70px; */
+  text-align: left;
+    list-style: none;
+  font-size: 0.3em;
+}
+
+#menu3:hover #insideText3{
+  display: block;
+  color:white;
+  width: 100%;
+  position: absolute;
+  border-left: 1px solid lightgray;
+  margin-left: 400px;
+  height: 700px;
+  top:-200px;
+  /* right: -70px; */
+  text-align: left;
+    list-style: none;
+  font-size: 0.3em;
+}
+
+#menu4:hover #insideText4{
+  display: block;
+  color:white;
+  width: 100%;
+  position: absolute;
+  margin-left: 400px;
+  height: 700px;
+  border-left: 1px solid lightgray;
+  /* right: -70px; */
+  top:-250px;
+  text-align: left;
+    list-style: none;
+  font-size: 0.3em;
+}
+
+#menu5:hover #insideText5{
+  display: block;
+  color:white;
+  width: 100%;
+  position: absolute;
+  margin-left: 400px;
+  height: 700px;
+  border-left: 1px solid lightgray;
+  /* right: -70px; */
+  top:-330px;
+  text-align: left;
+    list-style: none;
+  font-size: 0.3em;
+}
+
+#menu1:hover p{
+  display: block;
+  color:white;
+  position: absolute;
+  margin-left: 400px;
+  padding: 30px;
+  top:500px;
+  font-size: 0.3em;
+}
+
+#menu2:hover p{
+  display: block;
+  color:white;
+  
+  position: absolute;
+  margin-left: 400px;
+  padding: 30px;
+  top:320px;
+  font-size: 0.3em;
+}
+
+#menu3:hover p{
+  display: block;
+  color:white;
+  position: absolute;
+  margin-left: 400px;
+  padding: 30px;
+  top:250px;
+  font-size: 0.3em;
+}
+
+#menu4:hover p{
+  display: block;
+  color:white;
+  position: absolute;
+  margin-left: 400px;
+  padding: 30px;
+  top:170px;
+  font-size: 0.3em;
+}
+
+#menu5:hover p{
+  display: block;
+  color:white;
+  position: absolute;
+  margin-left: 400px;
+  top:170px;
+  padding: 30px;
+  font-size: 0.3em;
+}
+
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: black;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: white;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 1200px;
+  height: 100vh;
+  text-align: center;
+  margin: -100px 0 0 -50px;
+  padding: 150px;
+  padding-top: 125px;  
+  background:black;
+  list-style-type: none;
+  /* -webkit-font-smoothing: antialiased; */
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  
+  /* to go menu inside i.e. to hide menus */
+  transform: translate(-100%, 0);  
+  transition: transform 0.5s;
+  /* transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0); */
+}
+
+
+#menu .home
+{
+  padding: 10px 0;
+  font-size: 44px;
+  text-align: center;
+  width:100%;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}

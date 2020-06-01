@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import MenuDisplay from "./components/MenuDisplay.jsx"
+import Mn from "./components/mn.jsx"
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(

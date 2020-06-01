@@ -6,35 +6,9 @@ class menu extends Component {
         this.state = {}
     }
 
-    showImg = (e) => {
-        const img = document.getElementById("img1");
-        console.log(e.currentTarget.id, "uu")
-        img.style.display = "block";
-        img.style.backgroundPositionX = -e.offsetX + "px";
-        img.style.backgroundPositionY = -e.offsetY + "px";
-    }
-
-    hideImge = (e) => {
-        console.log(e, "e")
-        const img = document.getElementById("img1");
-        img.innerHTML = ""
-    }
-
     render() {
         return (
             <>
-                {/* <div className="container">
-                    <a className="text"
-                        href="/"
-                    >HOME HOME HOME HIME </a>
-                    <div className="overlay">
-                        <img
-                            src="https://cdn3.vectorstock.com/i/1000x1000/36/77/small-hearts-on-black-background-vector-18823677.jpg"
-                            alt="Avatar"
-                            className="image"
-                        />
-                    </div>
-                </div> */}
                 <nav role="navigation">
                     <div id="menuToggle">
                         <input type="checkbox" />
